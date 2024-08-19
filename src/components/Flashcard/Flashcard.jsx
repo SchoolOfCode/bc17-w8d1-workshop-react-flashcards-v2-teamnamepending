@@ -11,18 +11,20 @@ function Flashcard({ question, answer }) {
     setFlipped(!flipped);
   };
 
-
   return (
     <div className={`flashcard ${flipped? 'flipped' : ''}`} onClick={flipCard}>
       <div className="flashcard-content">
         <div className="flashcard-front">
-          {question}
+          {"What is React?"}
         </div>
         <div className="flashcard-back">
-          {answer}
+          {"Answer: React is a JavaScript library for building user interfaces."}
         </div>
       </div>
     </div>
+
+
+
   );
 }
 
