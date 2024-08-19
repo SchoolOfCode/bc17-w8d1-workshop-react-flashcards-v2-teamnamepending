@@ -1,0 +1,26 @@
+.footerContainer {
+  background-color: rgb(16, 7, 83);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
+  margin-top: auto;
+  margin-bottom: 0%;
+
+}
+
+.footerContainer p {
+  margin-right: 10px;
+}
+
+.footerContainer img {
+  width: 30px;
+  height: 30px;
+}
+@media (min-width: 0px) {
+  .footerContainer {
+    width: 100%;
+  }
+}

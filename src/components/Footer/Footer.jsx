@@ -1,10 +1,12 @@
 import React from 'react';
-import './Footer.css';
+import styles from './Footer.module.css';
+
 
 function Footer() {
   return (
-    <footer className="footer">
-      <p>© 2024 React Flashcards. All rights reserved.</p>
+    <footer className={styles.footerContainer}>
+      <p>Built with react</p>
+      <img className={styles.logoImage} src='./images/logo.png' alt="React Logo" width="60" height="60" />
     </footer>
   );
 }
