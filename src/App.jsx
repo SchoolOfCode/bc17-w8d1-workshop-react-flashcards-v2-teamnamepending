@@ -10,6 +10,9 @@ import './components/Footer/Footer.module.css';
 
 function App() {
   const [flashcards, setFlashcards] = useState([]);
+  const [question, setQuestion] = useState('What is React?');
+  const [answer, setAnswer] = useState('React is a JavaScript library for building user interfaces.');
+
 
   const addFlashcard = (flashcard) => {
     setFlashcards([...flashcards, flashcard]);
@@ -18,8 +21,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Form addFlashcard={addFlashcard} />
-      <Flashcard />
+      <Form setQuestion={setQuestion} setAnswer={setAnswer} /> 
+      <Flashcard question={question} answer={answer} /> 
       <Footer />
     </div>
   );
