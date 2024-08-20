@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Flashcard from './components/Flashcard/flashcard.jsx';
+import Form from './components/Form/Form.jsx';
 
 import './App.css';
 import './components/Header/Header.module.css';
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Form addFlashcard={addFlashcard} />
       <Flashcard />
       <Footer />
     </div>
